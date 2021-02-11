@@ -1,0 +1,39 @@
+{
+  "name": "front-end-challenge",
+  "version": "1.0.0",
+  "description": "Foregon Front End Developer ============================",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "serve": "npx http-serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enriqueprieto/front-end-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enriqueprieto/front-end-challenge/issues"
+  },
+  "homepage": "https://github.com/enriqueprieto/front-end-challenge#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "css-loader": "^5.0.2",
+    "exports-loader": "^2.0.0",
+    "http-server": "^0.12.3",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "popper.js": "^1.16.1"
+  }
+}
