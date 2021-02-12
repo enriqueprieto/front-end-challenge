@@ -1,1 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./variables.scss";
+
+@import "./chip.scss";
+@import "./background.scss";
+@import "./navbar.scss";
+@import "./foregon.scss";
+
+body{
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}

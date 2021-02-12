@@ -1,0 +1,50 @@
+.navbar-foregon{
+    padding: 16px 0;
+    .navbar-foregon-toggler{
+        border:0;
+        padding: 5px 0;
+        background-color: transparent;
+    }
+    .navbar-foregon-score{
+        padding: 20px 24px;
+        border-radius: 4px;
+        border-width: 2px;
+        line-height: 0;
+        font-size: 14px;
+    }
+    img{
+        display: block;
+    }
+    .navbar-brand{
+        margin: 0 24px;
+    }
+    .navbar-nav{
+        .nav-link{
+            font-size: 18px;
+            &.disabled{
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}
+.navbar-foregon-links{
+    padding: 16px 0px;
+    .nav{
+        overflow-x: auto;
+        .nav-item{
+            font-size: 12px;
+            + .nav-item{
+                margin-left: 32px;
+            }
+        }
+        .nav-link{
+            padding: 8px 0px;
+            white-space: nowrap;
+            color: rgba(255, 255, 255, 0.84);
+            &:hover{
+                color: #FFF;
+                text-decoration: underline;
+            }
+        }
+    }
+}

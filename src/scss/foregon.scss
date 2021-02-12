@@ -1,0 +1,91 @@
+.foregon-creditcard{
+    padding: 64px 0;
+    .foregon-creditcard-image{
+        #card-thumb-desktop{
+            width: 100%;
+            height: auto;
+        }
+    }
+    h2{
+        margin: 8px 0;
+    }
+    .foregon-creditcard-flags{
+        .chip{
+            + .chip{
+                margin-left: 16px;
+            }
+        }
+    }
+    .foregon-creditcard-basicInfo{
+        padding: 16px 0;
+    }
+    .foregon-creditcard-rating{
+        .foregon-creditcard-rating-item{
+            margin: 0;
+            display: flex;
+            font-size: 12px;
+            align-items: center;
+            justify-content: flex-start;
+            color: rgba(0, 0, 0, 0.24);
+            &.score{
+                color: rgba(0, 0, 0, 0.38);
+                span{
+                    margin-right: 0;
+                }
+            }
+            img, span{
+                margin-right: 4px;
+            }
+            + .foregon-creditcard-rating-item{
+                margin-left: 8px;
+            }
+        }
+    }
+    .foregon-creditcard-submit{
+        padding: 16px 0;
+        .foregon-creditcard-submit-ca{
+            background-color: var(--bs-foregon);
+            border: 0;
+            border-bottom: 4px solid var(--bs-foregonShade);
+            line-height: 1;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            color: #FFF;
+            font-weight: bold;
+            box-shadow: 0 8px 16px 0 rgba(10, 48, 102, 0.16);
+            margin-bottom: 16px;
+            position: relative;
+            img{
+                display: block;
+                position: absolute;
+                top: calc(50% - 12px);
+                right: 24px;
+            }
+        }
+        .foregon-creditcard-submit-security{
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0;
+            img{
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .foregon-creditcard-score{
+        padding: 22px 24px;
+        padding: 19px 24px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: solid 2px #f4f4f7;
+    }
+    .foregon-creditcard-info{
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .foregon-creditcard{
+        padding: 32px 0;
+    }
+}

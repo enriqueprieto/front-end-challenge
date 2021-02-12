@@ -1,0 +1,14 @@
+.chip{
+    display: inline-flex;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 4px 5px;
+    line-height: 1;
+    &.chip-success-outline{
+        border: 1px solid var(--green);
+        color: var(--green);
+    }
+    &.chip-medium-clear{
+        color: rgba(0, 0, 0, 0.6);
+    }
+}

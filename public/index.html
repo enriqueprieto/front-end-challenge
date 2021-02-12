@@ -6,7 +6,160 @@
   <title>Foregon Front End Challenge</title>
 </head>
 <body>
-  
+    <header>
+        <nav class="navbar navbar-foregon navbar-dark bg-foregon">
+            <div class="container">
+              <div class="d-flex justify-content-start align-items-center">
+                  <button class="navbar-foregon-toggler" type="button">
+                      <img src="./images/navbar-toggler-icon.svg" alt="Icone: Botão para expandir o menu." width="24px" height="24px">
+                  </button>
+                  <a href="#" class="navbar-brand">
+                      <img src="./images/logo-foregon-topo.svg" alt="Imagem: Logo Foregon Topo" width="134px" height="18">
+                  </a>
+                  <div class="d-none d-lg-block">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a href="#" class="nav-link disabled fw-bold">
+                                  Cartões de crédito
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="d-none d-lg-block">
+                  <button type="button" class="navbar-foregon-score btn btn-outline-light fw-bold text-uppercase">Descubra seu score grátis</button>
+              </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-foregon-links navbar-dark bg-foregonShade">
+            <div class="container">
+                <ul class="nav flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Cartões para negativados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Cartões com milhas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Cartões sem anuidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Cartões para estudanes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Cartões com mais benefícios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="foregon-creditcard">
+        <div class="container">
+            <div id="card-loading" class="text-center">
+                <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>                  
+                <p>Carregando...</p>
+            </div>
+            <div id="card-data">
+                <div class="row">
+                    <div class="col col-12 col-lg-3 foregon-creditcard-image">
+                        <div class="text-center text-md-left d-none d-lg-block">
+                            <img id="card-thumb-desktop">
+                        </div>
+                        <div class="text-center d-block d-lg-none">
+                            <img id="card-thumb-mobile">
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-5 flex-fill">
+                        <div class="foregon-creditcard-basicInfo">
+                            <div class="foregon-creditcard-flags d-flex">
+                                <span class="chip chip-success-outline text-uppercase">Recomendado</span>
+                                <span class="chip chip-medium-clear" id="card-network"></span>
+                            </div>
+                            <h2 id="card-name"></h2>
+                            <div class="foregon-creditcard-rating d-flex">
+                                <p class="foregon-creditcard-rating-item score fw-bold">
+                                    <img src="./images/star-blue-icon.svg" width="16px" height="16px" alt="Icone: Estrela indicando nível da avaliação do cartão."> <span id="card-rating-score"></span>
+                                </p>
+                                <p class="foregon-creditcard-rating-item text-uppercase">
+                                    <span id="card-rating-reviews"></span> Avaliações
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-4">
+                        <div class="foregon-creditcard-submit">
+                            <a href="#" id="card-apply" class="foregon-creditcard-submit-ca btn btn-block text-uppercase">
+                                Solicitar cartão
+                                <img src="./images/arrow-right-white-icon.svg" width="24px" height="24px">
+                            </a>
+                            <p class="foregon-creditcard-submit-security text-center">
+                                <img src="./images/shell-gray-icon.svg" width="24px" height="24px" alt="Icone de solicitação de segurança.">
+                                Solicite com seguranca
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <div class="row flex-lg-row-reverse">
+                        <div class="col col-12 col-lg-4">
+                            <div class="foregon-creditcard-score d-flex justify-content-center align-items-center">
+                                <img src="./images/score-high.svg" class="mr-4" width="65px" height="37" alt="Imagem de indicação das chances de aprovação do cartão.">
+                                <p class="m-0">Você tem <b>altas chances</b> de aprovação neste cartão</p>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-lg-8">
+                            <div class="row">
+                                <div class="col col-6 col-md-3 flex-fill">
+                                    <div class="foregon-creditcard-info d-flex flex-row justify-content-start align-items-start">
+                                        <img src="./images/info-blue-icon.svg" width="32px" height="32px" alt="Icone de informação de anuidade do cartão." class="mr-2">
+                                        <div class="foregon-creditcard-info-container">
+                                            <p class="m-0">
+                                                <span class="text-black-50">Anuidade</span><br>
+                                                <span id="card-firstAnnuity"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col col-6 col-md-3 flex-fill">
+                                    <div class="foregon-creditcard-info d-flex flex-row justify-content-start align-items-start">
+                                        <img src="./images/info-blue-icon.svg" width="32px" height="32px" alt="Icone de informação de renda mínima." class="mr-2">
+                                        <div class="foregon-creditcard-info-container">
+                                            <p class="m-0">
+                                                <span class="text-black-50">Renda mínima</span><br>
+                                                <span id="card-valueOfMinimalIncomeRequired"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col col-6 col-md-3 flex-fill">
+                                    <div class="foregon-creditcard-info d-flex flex-row justify-content-start align-items-start">
+                                        <img src="./images/smartphone-orange-icon.svg" width="32px" height="32px" alt="Icone de uso de app." class="mr-2">
+                                        <div class="foregon-creditcard-info-container">
+                                            <p class="m-0">
+                                                Aplicativo para controlar gastos
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col col-6 col-md-3 flex-fill">
+                                    <div class="foregon-creditcard-info d-flex flex-row justify-content-start align-items-start">
+                                        <img src="./images/airplan-blue-icon.svg" width="32px" height="32px" alt="Icone de informação de milhas." class="mr-2">
+                                        <div class="foregon-creditcard-info-container">
+                                            <p class="m-0">
+                                                <span id="card-description"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
   <script src="./app.js"></script>
 </body>
 </html>
