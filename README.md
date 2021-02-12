@@ -3,6 +3,7 @@
 ## Tecnologias
 
 * Bootstrap
+* Sass
 * Axios
 * Webpack
 * Http-Server
